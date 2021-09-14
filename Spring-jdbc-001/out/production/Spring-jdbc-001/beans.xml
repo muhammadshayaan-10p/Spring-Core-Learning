@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    //creating a bean for drivermanagerdatasource-->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <constructor-arg name = "url" value="jdbc:mysql://localhost:3306/school"></constructor-arg>
+        <constructor-arg name="username" value="root"></constructor-arg>
+        <constructor-arg name="password" value="password"></constructor-arg>
+    </bean>
+
+    <bean id="jdbcTemplateObject" class="org.springframework.jdbc.core.JdbcTemplate">
+        <constructor-arg name="dataSource" ref="dataSource"></constructor-arg>
+    </bean>
+
+    <bean id="studentDao" class="com.shayaan.dao.StudentDAOImpl">
+        <property name="JdbcTemplate" ref="jdbcTemplateObject"></property>
+    </bean>
+</beans>
