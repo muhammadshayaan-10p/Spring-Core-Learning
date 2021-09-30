@@ -1,0 +1,3 @@
+The code written so far is a simple MVC app, The controller I have made is named "HomeController". The HomeController has a method named "ShowPage" that is mapped to the URL "/", and it returns name of the JSP page("main-menu.jsp") to display. The views are defined in "/WEB-INF/views". You can check the "main-menu.jsp" view over there.
+
+The error that I am facing is that the URL mapping to "/" returns "index.jsp" view instead of "main-menu.jsp" view

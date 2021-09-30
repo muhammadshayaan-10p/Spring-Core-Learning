@@ -23,15 +23,26 @@
       </configuration>
     </facet>
   </component>
+<<<<<<< HEAD
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="true">
+=======
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+>>>>>>> bff30b57fce77a5c0962c00affb44f68ae9f835f
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
+<<<<<<< HEAD
     <orderEntry type="jdk" jdkName="JavaSE-1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="Spring-5.2.3.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="Spring MVC-5.2.3.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="Java EE 6-Java EE 6" level="project" />
+=======
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Spring-5.2.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Spring MVC-5.2.3.RELEASE" level="project" />
+>>>>>>> bff30b57fce77a5c0962c00affb44f68ae9f835f
   </component>
 </module>
